@@ -1,19 +1,31 @@
 {
   "scripts": {
-    "start": "snowpack dev",
-    "build": "snowpack build",
-    "test": "web-test-runner \"src/**/*.test.js\""
+    "dev": "run-p routify snp",
+    "build": "routify -b && routify export && snowpack build",
+    "test": "web-test-runner \"src/**/*.test.js\"",
+    "routify": "routify",
+    "snp": "snowpack dev"
   },
   "dependencies": {
     "svelte": "^3.24.0"
   },
   "devDependencies": {
+    "@roxi/routify": "^2.12.0",
     "@snowpack/plugin-dotenv": "^2.0.5",
     "@snowpack/plugin-svelte": "^3.5.0",
     "@snowpack/web-test-runner-plugin": "^0.2.0",
     "@testing-library/svelte": "^3.0.0",
     "@web/test-runner": "^0.12.0",
+    "autoprefixer": "^10.2.4",
     "chai": "^4.2.0",
-    "snowpack": "^3.0.1"
-  }
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.4",
+    "snowpack": "^3.0.1",
+    "tailwindcss": "^2.0.2"
+  },
+  "routify": {
+    "extensions": "svelte,html,svx,md",
+    "dynamicImports": false,
+    "routifyDir": "src/.routify"
+  }  
 }

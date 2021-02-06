@@ -1,7 +1,7 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    public: {url: '/', static: true},
+    public: {url: "/"},
     src: {url: '/dist'},
   },
   plugins: [
@@ -10,14 +10,14 @@ module.exports = {
   ],
   routes: [
     /* Example: Enable an SPA Fallback in development: */
-    // {"match": "routes", "src": ".*", "dest": "/index.html"},
+    {"match": "routes", "src": ".*", "dest": "/"}
   ],
   optimize: {
     /* Example: Bundle your final build: */
     // "bundle": true,
   },
   packageOptions: {
-    /* ... */
+    knownEntrypoints: ["@roxi/routify/runtime/buildRoutes"]
   },
   devOptions: {
     /* ... */
