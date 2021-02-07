@@ -1,4 +1,4 @@
-# Snowpack-Svelte-TailwindCss-Routify Template
+# YastPack: Yet Another Snowpack-Svelte-TailwindCss-Routify Template Pack
 
 ## Installation 
 
