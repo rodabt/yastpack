@@ -3,7 +3,7 @@
 ## Installation 
 
 ```bash
-git clone https://github.com/rodabt/futpack.git
+git clone https://github.com/rodabt/yastpack.git
 cd futpack
 npm install
 npm run dev
