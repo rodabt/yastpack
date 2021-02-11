@@ -4,7 +4,7 @@
 
 ```bash
 git clone https://github.com/rodabt/yastpack.git
-cd futpack
+cd yastpack
 npm install
 npm run dev
 ```
